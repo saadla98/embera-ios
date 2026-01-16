@@ -1,7 +1,8 @@
 ﻿# Linguist rules: keep presentation HTML out of language stats
-presentation/** linguist-documentation
+presentation/** linguist-vendored
 README.md linguist-documentation
 
 # Ensure sample sources are detected
+samples/** linguist-detectable
 samples/**/*.swift linguist-language=Swift
 samples/**/*.ts linguist-language=TypeScript
