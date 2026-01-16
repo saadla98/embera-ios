@@ -1,73 +1,219 @@
-# EMBERA
+﻿# EMBERA
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B0908,100:1F1A17&height=180&section=header&text=EMBERA&fontColor=F6EFE8&fontSize=64&fontAlignY=38&desc=Premium%20iOS%20Coffee%20Experience&descAlignY=63" alt="EMBERA" />
+</p>
+
+<p align="center">
+  <strong>Premium iOS coffee ritual with cinematic motion and zero friction.</strong><br/>
+  <em>Dark glass, warm light, generous space, and spring physics.</em>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/iOS-17+-0B0908?style=for-the-badge&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/Swift-6+-FA7343?style=for-the-badge&logo=swift&logoColor=white" />
+  <img src="https://img.shields.io/badge/SwiftUI-FA7343?style=for-the-badge&logo=swift&logoColor=white" />
+  <img src="https://img.shields.io/badge/SwiftData-111111?style=for-the-badge&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Apple%20Pay-000000?style=for-the-badge&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/Passkeys-111111?style=for-the-badge&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/MapKit-1D1D1D?style=for-the-badge&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/Live%20Activities-1D1D1D?style=for-the-badge&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/Widgets-1D1D1D?style=for-the-badge&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/Core%20Haptics-1D1D1D?style=for-the-badge&logo=apple&logoColor=white" />
+</p>
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" width="40" height="40" alt="Swift" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" width="40" height="40" alt="Apple" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" width="40" height="40" alt="Firebase" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40" height="40" alt="TypeScript" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" height="40" alt="Node.js" />
+</p>
+
+<table align="center">
+  <tr>
+    <td align="center"><strong>Onboarding</strong><br/>Ambient parallax and matched geometry.</td>
+    <td align="center"><strong>Browse</strong><br/>Coverflow, glass cards, snap carousels.</td>
+    <td align="center"><strong>Checkout</strong><br/>Bottom sheet with Apple Pay.</td>
+  </tr>
+</table>
+
+> Note: This public repo is documentation-only. The file paths below map to the full EMBERA codebase.
+
+---
+
+## Table of Contents
+- [Vision](#vision)
+- [Brand Board](#brand-board)
+- [Design Language](#design-language)
+- [Tech Stack Wall](#tech-stack-wall)
+- [Experience Map](#experience-map)
+- [Feature Set](#feature-set)
+- [Motion and Haptics](#motion-and-haptics)
+- [Scrolling System](#scrolling-system)
+- [Architecture](#architecture)
+- [Project Structure](#project-structure)
+- [App Flow](#app-flow)
+- [Data Flow](#data-flow)
+- [Design System](#design-system)
+- [Core Technologies](#core-technologies)
+- [App State and Routing](#app-state-and-routing)
+- [Dependency Injection](#dependency-injection)
+- [Domain Models](#domain-models)
+- [Checkout Pipeline](#checkout-pipeline)
+- [Rewards Logic](#rewards-logic)
+- [Order Tracking Logic](#order-tracking-logic)
+- [Passkey Backend Contract](#passkey-backend-contract)
+- [Firestore Data Model](#firestore-data-model)
+- [Security and Privacy](#security-and-privacy)
+- [Performance](#performance)
+- [Accessibility](#accessibility)
+- [Build Variants](#build-variants)
+- [Seed Data](#seed-data)
+- [Backend](#backend)
+- [Setup](#setup)
+- [Key IDs](#key-ids)
+- [Important UI Files](#important-ui-files)
+- [Architecture Diagram](#architecture-diagram)
+- [Full File Map](#full-file-map)
+- [QA Test Plan](#qa-test-plan)
+- [Cinematic UI Blueprint](#cinematic-ui-blueprint)
+- [Developer Playbook](#developer-playbook)
+- [Stability Rules](#stability-rules)
+- [Troubleshooting](#troubleshooting)
+- [Release Checklist](#release-checklist)
+- [Why These Choices Matter](#why-these-choices-matter)
+
+---
+
+## Vision
+EMBERA is a ritual engine. Not a simple shop, but a cinematic coffee journey.
+Every interaction feels calm, warm, and intentional.
+
+---
+
+## Brand Board
+Palette and material tokens:
+
+<p>
+  <img src="https://img.shields.io/badge/Charcoal-0B0908?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Obsidian-1F1A17?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Ember-FF6A3D?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Ivory-F6EFE8?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Glass-2B2522?style=for-the-badge" />
+</p>
+
+Material spec:
+- Surface: #0B0908
+- Elevation: #1F1A17
+- Glass: #2B2522 at 55% opacity with a 1px stroke #3A322D
+- Highlight: #FF6A3D glow at 8% intensity
+- Text: #F6EFE8
+
+Typography:
+- Display: New York (serif, tight tracking)
+- Body: SF Pro Rounded (calm, friendly, high legibility)
+
+---
+
+## Design Language
+Cinematic blueprint:
+- Dark surfaces plus soft highlights
+- Glass layers with subtle borders
+- Serif display type plus rounded body type
+- Motion as communication, never decoration
+- Haptics that feel warm, not loud
+
+---
+
+## Tech Stack Wall
+<table align="center">
+  <tr>
+    <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" width="48" height="48" alt="Swift" /><br/>Swift 6</td>
+    <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" width="48" height="48" alt="Apple" /><br/>SwiftUI</td>
+    <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" width="48" height="48" alt="Apple" /><br/>SwiftData</td>
+    <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" width="48" height="48" alt="Firebase" /><br/>Firebase</td>
+    <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="48" height="48" alt="Node.js" /><br/>Cloud Functions</td>
+    <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="48" height="48" alt="TypeScript" /><br/>TypeScript</td>
+  </tr>
+</table>
+
+---
+
+## Experience Map
+| Stage | Emotion | Motion | Haptics |
+| --- | --- | --- | --- |
+| Onboarding | Calm welcome | Parallax hero, matched geometry | Soft selection on page change |
+| Home | Warm focus | Ambient drift, glass blur, snap carousel | Subtle tick on card focus |
+| Product | Control | Drag gestures, spring response | Soft impact on add-to-cart |
+| Checkout | Confidence | Bottom sheet, Apple Pay sheet | Success pulse on payment |
+| Tracking | Reassurance | Live Activity timeline | Light update tick |
+
+---
+
+## Feature Set
+- Emotional onboarding
+- Passkeys plus Face ID sessions
+- Immersive home with ambient depth
+- Cinematic product browsing and customization
+- Bottom sheet cart with Apple Pay
+- Loyalty and rewards
+- Store locator (MapKit)
+- Live order tracking (Live Activities)
+- Widgets for rewards and orders
+
+---
+
+## Motion and Haptics
+Motion tokens:
+- Spring: response 0.55, damping 0.86, blend 0.12
+- Fast ease: 0.18s, easeOut
+- Slow ease: 0.60s, easeInOut
+- Ambient drift: 16s loop, 0.02 vertical offset
+
+Haptics:
+- Selection feedback on navigation
+- Soft impact on add-to-cart and reward redeem
+- Success on Apple Pay completion
+
+Files:
+- EMBERA/Core/Motion/EmberaMotion.swift
+- EMBERA/Core/Motion/HapticEngine.swift
+
+---
+
+## Scrolling System
+- Momentum tuned with .scrollTargetBehavior(.viewAligned) for carousels
+- ParallaxHeader uses GeometryReader and minY offsets (0.35 parallax ratio)
+- CoverflowCarousel uses rotation3DEffect plus scale interpolation
+- Sticky segments use safeAreaInset with ultra-thin material
+- Nested scroll relies on named coordinateSpace to avoid gesture conflicts
+
+---
+
+## Architecture
+Clean Architecture plus MVVM. UI never speaks directly to data sources.
+
+```mermaid
+flowchart TB
+  UI[SwiftUI Views] --> VM[ViewModels]
+  VM --> UC[Use Cases]
+  UC --> RP[Repository Protocols]
+  RP --> LOCAL[SwiftData Repos]
+  RP --> REMOTE[Firebase Repos]
+  REMOTE --> FB[Firestore / Functions / Auth]
+  LOCAL --> SD[SwiftData]
 ```
-  ____  __  __  ____  ____   ___
- | __ )|  \/  |/ ___||  _ \ / _ \
- |  _ \| |\/| | |  _ | |_) | | | |
- | |_) | |  | | |_| ||  _ <| |_| |
- |____/|_|  |_|\____||_| \_\\___/
-```
 
-EMBERA is a premium iOS coffee experience with 2026-level Apple craft:
-dark, warm, cinematic, motion-led, and performance-first.
-
-This README explains the project from A to Z: structure, architecture,
-flows, backend, hardest parts, and setup steps.
+Key principle: Local-first. Network failure never blocks checkout.
 
 ---
 
-## 1) Vision (Product DNA)
-EMBERA is a ritual engine. Not a "shop", but a calm cinematic journey:
-
-- Emotional onboarding with motion.
-- Immersive home and ambient depth.
-- Cinematic browsing and deep customization.
-- Bottom-sheet cart with Apple Pay.
-- Live order tracking (Live Activities).
-- Rewards, loyalty, and store discovery.
-
-Design language:
-dark surfaces, soft highlights, elegant typography, glass layers,
-and motion as communication (not decoration).
-
----
-
-## 2) Tech Stack
-- Swift 6+
-- SwiftUI
-- MVVM + Clean Architecture
-- async/await
-- SwiftData
-- Firebase (Auth + Firestore + Functions)
-- Apple Pay
-- Passkeys + Face ID
-- MapKit
-- Live Activities
-- Widgets
-- Core Haptics
-- Full Accessibility
-- Dark Mode first
-
----
-
-## 3) Architecture Overview
-Clean Architecture + MVVM:
-
-1) Domain (pure logic)
-   - Models, repository protocols, use cases.
-2) Data (infrastructure)
-   - SwiftData repositories, Firebase repositories, payments.
-3) Features (UI + ViewModels)
-   - SwiftUI views and their view models.
-4) Core (cross-cutting)
-   - Design system, motion, components, security, widgets, live activity.
-5) App
-   - DI container + routing.
-
-This separation keeps UI clean and lets backend change without touching UI.
-
----
-
-## 4) Project Structure
+## Project Structure
 ```
 EMBERA/
   App/                     App entry + routing + DI
@@ -81,301 +227,109 @@ EMBERA/
 
 ---
 
-## 5) App Flow (From A to Z)
+## App Flow
 1) Onboarding
-2) Passkey auth (create or sign-in)
-3) Home (hero + featured + browse shortcut)
-4) Browse + product detail customization
-5) Cart bottom sheet
-6) Apple Pay checkout
-7) Rewards (tiers + offers)
-8) Live order tracking (timeline + Live Activity)
-9) Store locator (MapKit)
+2) Passkey auth
+3) Biometric lock
+4) Home
+5) Browse plus product detail customization
+6) Cart bottom sheet
+7) Apple Pay checkout
+8) Rewards and loyalty
+9) Live order tracking
+10) Store locator
 
 ---
 
-## 6) Data Flow (Local + Remote)
-Local-first by design:
-- SwiftData stores cart, orders, loyalty.
-- Remote Firebase sync is best-effort (never blocks checkout).
+## Data Flow
+Local-first architecture:
+- SwiftData for cart, orders, and loyalty
+- Remote Firebase sync is best-effort only
 
-Remote is enabled when Firebase SDKs are present:
-- `RemoteAuthRepository` (Functions + FirebaseAuth)
-- `FirebaseOrderRepository` (per-user orders)
-- `FirebaseLoyaltyRepository` (per-user loyalty)
-
-Offline still works because local storage is always used.
+Remote layer activates when Firebase SDKs are present:
+- RemoteAuthRepository via Functions plus FirebaseAuth
+- FirebaseOrderRepository per-user orders
+- FirebaseLoyaltyRepository per-user loyalty
 
 ---
 
-## 7) Design System (UI that feels "next-year")
-Core styles in `EMBERA/Core/DesignSystem/`:
-- `EmberaColors`, `EmberaTypography`, `EmberaTheme`, `EmberaSpacing`
+## Design System
+Core styles in EMBERA/Core/DesignSystem/:
+- EmberaColors, EmberaTypography, EmberaTheme, EmberaSpacing
 
-Core components in `EMBERA/Core/Components/`:
-- GlassCard, EmberaPrimaryButton, chips, steppers, search field, etc.
+Core components in EMBERA/Core/Components/:
+- GlassCard, EmberaPrimaryButton, chips, steppers, search field
 
-Motion in `EMBERA/Core/Motion/`:
-- `EmberaMotion` (spring + ease curves)
-- parallax headers + coverflow
-
-The "sci-fi" feel is in the layering:
-glass surfaces + ambient gradient + slow motion + haptics.
+Motion utilities in EMBERA/Core/Motion/:
+- EmberaMotion
+- ParallaxHeader
+- CoverflowCarousel
 
 ---
 
-## 8) The Hard Parts (What + Why)
-
-### A) Passkeys end-to-end (iOS + backend)
-Files:
-- `EMBERA/Core/Security/PasskeyService.swift`
-- `EMBERA/Core/Network/AuthAPIClient.swift`
-- `EMBERA/Data/Repositories/RemoteAuthRepository.swift`
-- `EMBERA/Backend/Firebase/functions/src/index.ts`
-
-Why hard:
-- Passkeys need server-generated challenges and verification.
-Solution:
-- Functions generate challenges and verify with `@simplewebauthn/server`.
-- iOS performs the ceremony via `AuthenticationServices`.
-- Server returns Firebase custom token for auth session.
-
-### B) Live Activities + Widgets bridge
-Files:
-- `EMBERA/Core/LiveActivity/OrderLiveActivityManager.swift`
-- `EMBERA/Core/Widgets/WidgetDataStore.swift`
-- `EMBERA/Extensions/EmberaWidgets/`
-
-Why hard:
-- Widgets/Live Activities run in separate processes and targets.
-Solution:
-- App Group storage `group.com.embera` shares snapshots.
-
-### C) Order tracking timeline
-Files:
-- `EMBERA/Features/Orders/OrderStatusTimeline.swift`
-- `EMBERA/Features/Orders/OrdersViewModel.swift`
-
-Why hard:
-- Needs realistic progress without server updates.
-Solution:
-- Deterministic timeline based on createdAt + ETA.
-
-### D) Local-first + remote sync
-Files:
-- `EMBERA/Data/Repositories/CompositeOrderRepository.swift`
-
-Why hard:
-- Network failures should never block checkout.
-Solution:
-- Save locally first; remote save best-effort.
+## Core Technologies
+- SwiftUI plus async/await
+- SwiftData local persistence
+- Firebase Auth plus Firestore plus Functions
+- Apple Pay, Passkeys, Face ID
+- MapKit, Widgets, Live Activities
+- Core Haptics
 
 ---
 
-## 9) Backend (Firebase) Overview
-Backend lives in `EMBERA/Backend/Firebase`.
-It provides:
-- Passkey registration + sign-in with WebAuthn verification.
-- Firebase Auth custom token generation.
-- Firestore data for loyalty and orders.
-
-Files:
-- `functions/src/index.ts` (Cloud Functions)
-- `firestore.rules` (security rules)
-- `firestore.indexes.json` (indexes)
-
-Full backend setup steps are in:
-`EMBERA/Backend/Firebase/README.md`
-
----
-
-## 10) Setup From A to Z (Mac + Xcode)
-
-### 10.1 Prerequisites
-- Xcode 15+ (Swift 6)
-- iOS 17+ device
-- Firebase project
-- Associated Domain (for passkeys)
-- Apple Pay merchant ID
-
-### 10.2 Add Firebase SDKs (SPM)
-Add via Swift Package Manager:
-- FirebaseAuth
-- FirebaseFirestore
-- FirebaseFunctions
-- FirebaseCore
-
-Add `GoogleService-Info.plist` to app target.
-
-### 10.3 Configure Firebase backend
-From `EMBERA/Backend/Firebase`:
-```
-firebase login
-firebase use <project-id>
-firebase functions:config:set embera.rp_id="embera.coffee" embera.origin="https://embera.coffee" embera.rp_name="EMBERA"
-firebase deploy --only functions,firestore:rules,firestore:indexes
-```
-
-### 10.4 Capabilities (Xcode)
-Add to app target:
-- Associated Domains: `webcredentials:embera.coffee`
-- Apple Pay: `merchant.com.embera.coffee`
-- App Groups: `group.com.embera`
-- Live Activities
-
-### 10.5 AASA file (Passkeys requirement)
-Host `/.well-known/apple-app-site-association` at your domain,
-and include your Team ID + bundle ID in `webcredentials.apps`.
-
-### 10.6 Widget + Live Activity Targets
-Make sure widget files in `EMBERA/Extensions/EmberaWidgets/`
-are assigned to a Widget Extension target in Xcode.
-
-### 10.7 Run
-Build on device (not simulator) to test:
-- Passkeys
-- Apple Pay
-- Live Activities
-
----
-
-## 11) Key IDs and Places to Update
-- Apple Pay merchant ID:
-  `EMBERA/App/AppContainer.swift`
-  default = `merchant.com.embera.coffee`
-- App Group:
-  `EMBERA/Core/Widgets/WidgetDataStore.swift`
-  default = `group.com.embera`
-- Relying Party ID (passkeys):
-  `EMBERA/Data/Repositories/LocalAuthRepository.swift`
-  default = `embera.coffee`
-- Firebase config:
-  `GoogleService-Info.plist`
-
----
-
-## 12) Important UI Files (Where the magic is)
-- Home: `EMBERA/Features/Home/HomeView.swift`
-- Browse: `EMBERA/Features/Catalog/CatalogView.swift`
-- Detail: `EMBERA/Features/ProductDetail/ProductDetailView.swift`
-- Cart: `EMBERA/Features/Cart/CartView.swift`
-- Rewards: `EMBERA/Features/Rewards/RewardsView.swift`
-- Tracking: `EMBERA/Features/Orders/OrderTrackingView.swift`
-- Stores: `EMBERA/Features/Stores/StoresView.swift`
-- Onboarding: `EMBERA/Features/Onboarding/OnboardingView.swift`
-
----
-
-## 13) Testing Notes
-Because the app is UI-heavy:
-- Test onboarding and auth flow on device.
-- Verify Apple Pay in Sandbox.
-- Trigger order tracking to confirm Live Activity.
-- Validate widgets after an order is placed.
-- Check rewards updates after checkout.
-
----
-
-## 14) Troubleshooting
-- Passkeys not showing:
-  - Check Associated Domains + AASA file.
-  - Make sure rp_id and origin are correct in Functions config.
-- Apple Pay not available:
-  - Check merchant ID + entitlements.
-  - Use a real device.
-- Widgets not updating:
-  - Confirm App Group ID matches.
-  - Ensure widget target is set.
-- Firebase errors:
-  - Confirm SDKs are added via SPM and
-    `GoogleService-Info.plist` is in target.
-
----
-
-## 15) Why These Choices Matter
-EMBERA is designed to feel premium and effortless:
-local-first persistence avoids friction,
-passkeys remove password pain,
-motion leads the eye,
-and Live Activities keep the ritual alive beyond the app.
-
----
-
-If you want a specific deep dive (code walkthrough or UI refinement),
-tell me which section and I will expand it further.
-
----
-
-## 16) App State and Routing (How the app decides what to show)
-Core routing lives in `EMBERA/App/RootView.swift`:
+## App State and Routing
+Routing logic lives in EMBERA/App/RootView.swift.
 
 Order of gates:
-1) Onboarding (first launch)
-2) Passkey auth (no session)
-3) Biometric lock (session locked)
-4) Main app tabs
+1) Onboarding
+2) Passkey auth
+3) Biometric lock
+4) Main tabs
 
-State lives in:
-- `EMBERA/App/AppState.swift`
-  - `hasCompletedOnboarding`
-  - `selectedTab`
-  - `isCartPresented`
-  - `userDisplayName`
-
-This keeps flows deterministic and avoids navigation bugs.
+State lives in EMBERA/App/AppState.swift:
+- hasCompletedOnboarding
+- selectedTab
+- isCartPresented
+- userDisplayName
 
 ---
 
-## 17) Dependency Injection (Why AppContainer exists)
-`EMBERA/App/AppContainer.swift` constructs all repositories and view models:
+## Dependency Injection
+AppContainer builds all repositories and view models:
+- Local repos use SwiftData
+- Remote repos use Firebase when SDKs are available
+- Feature view models are shared across tabs
 
-- Local repositories use SwiftData.
-- Remote repositories use Firebase when SDKs are available.
-- Feature view models are created once and reused.
-
-This avoids hidden dependencies and makes the app predictable.
-
----
-
-## 18) Domain Models (Data Schemas)
-Key models and where they live:
-
-- `Product` (name, price, tone, tasting notes)
-  `EMBERA/Domain/Models/Product.swift`
-- `CartItem` (product + grind + bag + brew + quantity)
-  `EMBERA/Domain/Models/CartItem.swift`
-- `CartSummary` (subtotal, shipping, tax)
-  `EMBERA/Domain/Models/CartSummary.swift`
-- `Order` (items, summary, status, createdAt, ETA)
-  `EMBERA/Domain/Models/Order.swift`
-- `LoyaltyAccount` (points, tier, visits, memberSince)
-  `EMBERA/Domain/Models/LoyaltyAccount.swift`
-- `RewardOffer` (title, pointsCost, highlight)
-  `EMBERA/Domain/Models/RewardOffer.swift`
-- `StoreLocation` (address, coordinates, hours)
-  `EMBERA/Domain/Models/StoreLocation.swift`
+File: EMBERA/App/AppContainer.swift
 
 ---
 
-## 19) Checkout Pipeline (Step by Step)
-Flow (files in parentheses):
+## Domain Models
+Key models:
+- Product, CartItem, CartSummary, Order
+- LoyaltyAccount, RewardOffer, RewardTier
+- StoreLocation, UserSession
 
-1) Cart summary built (`PaymentSummaryBuilder`)
-2) Apple Pay authorization (`ApplePayService`)
-3) Order created (`Order`)
-4) Persist order locally (`LocalOrderRepository`)
-5) Remote order sync (best-effort)
-6) Loyalty update (`ApplyOrderLoyaltyUseCase`)
-7) Live Activity started (`OrderLiveActivityManager`)
-8) Widgets snapshot saved (`WidgetDataStore`)
-
-This flow guarantees checkout success even if network is down.
+Files in EMBERA/Domain/Models/
 
 ---
 
-## 20) Rewards Logic (Points and Tiers)
+## Checkout Pipeline
+Flow:
+1) Cart summary built (PaymentSummaryBuilder)
+2) Apple Pay auth (ApplePayService)
+3) Order created (Order)
+4) Persist locally (LocalOrderRepository)
+5) Remote sync (best-effort)
+6) Loyalty update (ApplyOrderLoyaltyUseCase)
+7) Live Activity start (OrderLiveActivityManager)
+8) Widget snapshot saved (WidgetDataStore)
+
+---
+
+## Rewards Logic
 Points engine:
-- `LoyaltyEngine.points(for:)` = `subtotal * 10`
+- LoyaltyEngine.points(for:) = subtotal * 10
 
 Tier thresholds:
 - Ember: 0
@@ -383,175 +337,182 @@ Tier thresholds:
 - Halo: 1200
 
 Files:
-- `EMBERA/Domain/Services/LoyaltyEngine.swift`
-- `EMBERA/Domain/Models/RewardTier.swift`
+- EMBERA/Domain/Services/LoyaltyEngine.swift
+- EMBERA/Domain/Models/RewardTier.swift
 
 ---
 
-## 21) Order Tracking Logic (Timeline)
-Orders are tracked using a deterministic timeline:
+## Order Tracking Logic
+Deterministic timeline:
 - Processing: 15 min
 - Roasting: 45 min
 - Shipping: rest of ETA window
 
-File: `EMBERA/Features/Orders/OrderStatusTimeline.swift`
-
-This gives a realistic Live Activity without backend events.
+File: EMBERA/Features/Orders/OrderStatusTimeline.swift
 
 ---
 
-## 22) Passkey Backend Contract (Firebase Functions)
+## Passkey Backend Contract
 Functions are callable endpoints:
 
-- `registerBegin`
-  - request: `displayName`
-  - response: `uid`, `challenge`, `userID`, `rpID`, `rpName`
-- `registerFinish`
-  - request: `uid`, `credential`
-  - response: `uid`, `displayName`, `memberSince`, `customToken`
-- `signInBegin`
+- registerBegin
+  - request: displayName
+  - response: uid, challenge, userID, rpID, rpName
+- registerFinish
+  - request: uid, credential
+  - response: uid, displayName, memberSince, customToken
+- signInBegin
   - request: none
-  - response: `challengeID`, `challenge`, `rpID`
-- `signInFinish`
-  - request: `challengeID`, `credential`
-  - response: `uid`, `displayName`, `memberSince`, `customToken`
+  - response: challengeID, challenge, rpID
+- signInFinish
+  - request: challengeID, credential
+  - response: uid, displayName, memberSince, customToken
 
-Functions live in `EMBERA/Backend/Firebase/functions/src/index.ts`.
+File: EMBERA/Backend/Firebase/functions/src/index.ts
 
 ---
 
-## 23) Firestore Data Model (Server Side)
+## Firestore Data Model
 Collections:
+- users/{uid}
+- users/{uid}/credentials/{credentialID}
+- orders/{orderId}
+- webauthnChallenges/{challengeId}
 
-- `users/{uid}`
-  - `displayName`
-  - `webauthnUserID`
-  - `points`, `visits`, `tier`
-  - `memberSince`, `lastUpdated`
-  - `currentChallenge` (temporary)
-
-- `users/{uid}/credentials/{credentialID}`
-  - `credentialID`
-  - `publicKey`
-  - `counter`
-  - `createdAt`, `lastUsedAt`
-
-- `orders/{orderId}`
-  - `id`, `orderData`, `createdAt`, `status`, `userID`
-
-- `webauthnChallenges/{challengeId}`
-  - `challenge`, `createdAt`
-
-Rules live in `EMBERA/Backend/Firebase/firestore.rules`.
+Rules in EMBERA/Backend/Firebase/firestore.rules
 
 ---
 
-## 24) Security and Privacy (Critical Notes)
-- Passkeys require a trusted domain + AASA file.
-- Firestore rules restrict access by `request.auth.uid`.
-- Custom tokens are generated server-side only.
-- Keychain stores session locally.
-
-Never ship without:
-- Associated Domains configured
-- AASA file live
-- Firestore rules deployed
+## Security and Privacy
+- Passkeys require Associated Domains plus AASA file
+- Firestore rules restrict by request.auth.uid
+- Custom tokens generated server-side only
+- Keychain stores local session
 
 ---
 
-## 25) Performance and Smoothness
-Performance tactics used:
-- `LazyVStack` for long lists.
-- `TimelineView` updates only when needed.
-- Lightweight models with `Codable`.
-- Local-first data access to avoid blocking UI.
-
-If performance dips:
-- Reduce heavy gradients inside scrolling views.
-- Avoid nested scrolls unless necessary.
+## Performance
+- LazyVStack for lists
+- TimelineView updates only when needed
+- Local-first persistence to avoid UI stalls
 
 ---
 
-## 26) Accessibility Checklist
-Current coverage:
-- Labels and hints on key controls.
-- VoiceOver-friendly card groupings.
-
-Before release:
-- Audit contrast on glass surfaces.
-- Test with Larger Text and Reduce Motion.
-- Add accessibility values to sliders and toggles.
+## Accessibility
+- VoiceOver labels on critical UI
+- Combine accessibility elements in cards
+- Test with Larger Text and Reduce Motion
 
 ---
 
-## 27) Motion and Haptics Spec
-Motion:
-- Spring response: `EmberaMotion.spring`
-- Shared transitions: `matchedGeometryEffect` in onboarding
-
-Haptics:
-- Selection changes on key taps.
-- Soft transient feedback for rewards.
-
-Files:
-- `EMBERA/Core/Motion/EmberaMotion.swift`
-- `EMBERA/Core/Motion/HapticEngine.swift`
+## Build Variants
+- Firebase SDKs present: remote auth plus sync
+- Firebase SDKs absent: local-only experience
 
 ---
 
-## 28) Build Variants (Local vs Remote)
-The app adapts based on SDK availability:
-
-- If FirebaseAuth + Functions exist -> remote passkey auth.
-- If FirebaseFirestore exists -> remote orders + loyalty.
-- Otherwise -> local-only data.
-
-This keeps the app usable in all environments.
+## Seed Data
+Seed content lives in:
+- EMBERA/Data/Seed/SeedProducts.swift
+- EMBERA/Data/Seed/SeedStores.swift
 
 ---
 
-## 29) Seed Data (Demo Mode)
-Seed data is defined in:
-- `EMBERA/Data/Seed/SeedProducts.swift`
-- `EMBERA/Data/Seed/SeedStores.swift`
+## Backend
+Backend lives in EMBERA/Backend/Firebase and provides:
+- Passkey verification
+- Firebase Auth custom tokens
+- Firestore storage for loyalty and orders
 
-These give the app rich content without a backend.
-
----
-
-## 30) Release Checklist (Do not skip)
-- Firebase SDKs added and configured
-- Functions deployed + rules + indexes
-- AASA file live
-- Apple Pay merchant ID verified
-- Widget target configured
-- App Group ID matches code
-- Real device testing completed
+Full setup steps are in EMBERA/Backend/Firebase/README.md
 
 ---
 
-## 31) Architecture Diagram (ASCII)
+## Setup
+### Prerequisites
+- Xcode 15+
+- iOS 17+ device
+- Firebase project
+- Associated domain for passkeys
+- Apple Pay merchant ID
+
+### Add Firebase SDKs
+Via Swift Package Manager:
+- FirebaseAuth
+- FirebaseFirestore
+- FirebaseFunctions
+- FirebaseCore
+
+Add GoogleService-Info.plist to app target.
+
+### Deploy backend
+From EMBERA/Backend/Firebase:
 ```
-   [SwiftUI Views]
-          |
-      [ViewModels]  <---- AppState, EnvironmentObjects
-          |
-      [Use Cases]   (Domain)
-          |
-    [Repositories]  (Protocols)
-        /   \
-  [SwiftData] [Firebase]
-   (Local)     (Remote)
-        \       /
-      [Composite Repos]
-          |
-   [Core Services]
- (Apple Pay / Passkeys / Haptics / Widgets / Live Activity)
+firebase login
+firebase use <project-id>
+firebase functions:config:set embera.rp_id="embera.coffee" embera.origin="https://embera.coffee" embera.rp_name="EMBERA"
+firebase deploy --only functions,firestore:rules,firestore:indexes
 ```
 
+### Xcode Capabilities
+- Associated Domains: webcredentials:embera.coffee
+- Apple Pay: merchant.com.embera.coffee
+- App Groups: group.com.embera
+- Live Activities
+
+### AASA file
+Host /.well-known/apple-app-site-association at your domain and include
+Team ID plus bundle ID in webcredentials.apps.
+
 ---
 
-## 32) Full File Map (Every File)
+## Key IDs
+- Apple Pay merchant ID:
+  EMBERA/App/AppContainer.swift
+  default = merchant.com.embera.coffee
+- App Group:
+  EMBERA/Core/Widgets/WidgetDataStore.swift
+  default = group.com.embera
+- Relying Party ID (passkeys):
+  EMBERA/Data/Repositories/LocalAuthRepository.swift
+  default = embera.coffee
+- Firebase config:
+  GoogleService-Info.plist
+
+---
+
+## Important UI Files
+- Home: EMBERA/Features/Home/HomeView.swift
+- Browse: EMBERA/Features/Catalog/CatalogView.swift
+- Detail: EMBERA/Features/ProductDetail/ProductDetailView.swift
+- Cart: EMBERA/Features/Cart/CartView.swift
+- Rewards: EMBERA/Features/Rewards/RewardsView.swift
+- Tracking: EMBERA/Features/Orders/OrderTrackingView.swift
+- Stores: EMBERA/Features/Stores/StoresView.swift
+- Onboarding: EMBERA/Features/Onboarding/OnboardingView.swift
+
+---
+
+## Architecture Diagram
+```
+[SwiftUI Views]
+      |
+  [ViewModels]
+      |
+   [Use Cases]
+      |
+[Repository Protocols]
+   /            \
+[SwiftData]   [Firebase]
+    \            /
+  [Composite Repos]
+      |
+[Core Services]
+```
+
+---
+
+## Full File Map
 ```
 EMBERA/README.md
 EMBERA/App/EMBERAApp.swift
@@ -719,65 +680,99 @@ EMBERA/Backend/Firebase/functions/src/index.ts
 
 ---
 
-## 33) QA Test Plan (Manual + Edge Cases)
-Core user journeys:
-- Onboarding: swipe flow, skip, final enter.
-- Passkey create: new user, cancel, retry, wrong domain.
-- Passkey sign-in: existing user, cancel, retry.
-- Biometric lock: background/foreground lock, unlock, sign out.
-- Browse: search + filter + select product.
-- Product detail: grind/bag/brew changes + subscription toggle.
-- Cart: quantity edit, remove, empty state.
-- Apple Pay: success, cancel, no card, not available.
-- Rewards: points update after order, redeem locked/unlocked.
-- Orders: new order appears, tracking timeline updates.
-- Live Activity: start, update, end.
-- Widgets: points snapshot + order snapshot.
-- Stores: map selection + directions + call.
+## QA Test Plan
+Core journeys:
+- Onboarding: swipe, skip, enter
+- Passkey create: new user, cancel, retry
+- Passkey sign-in: existing user, cancel, retry
+- Biometric lock: background/foreground lock, unlock
+- Browse: search, filter, select
+- Product detail: grind, bag, brew changes
+- Cart: quantity edit, remove, empty
+- Apple Pay: success, cancel, no card
+- Rewards: points update, redeem
+- Orders: tracking timeline updates
+- Live Activity: start, update, end
+- Widgets: rewards plus order snapshots
+- Stores: map selection, directions, call
 
 Edge cases:
-- Offline mode: place order, view rewards, reopen app.
-- Firebase auth expired: ensure session is reset.
-- Widget target not enabled: app still runs.
-- No biometric hardware: app still signs in.
-- System time changed: tracking timeline still stable.
+- Offline checkout
+- Firebase auth expired
+- No biometric hardware
+- System time changed
 
 ---
 
-## 34) Cinematic UI Blueprint (Sci-Fi Premium)
+## Cinematic UI Blueprint
 Think "warm spacecraft cockpit":
-
-- Background: multi-layer ambient gradient + soft noise.
-- Surfaces: glass cards with subtle borders and low elevation.
-- Typography: serif display for emotion, rounded body for clarity.
-- Motion: slow spring reveals, parallax headers, coverflow depth.
-- Haptics: gentle pulses for reward confirmations.
-
-The UI is designed to feel like a ritual, not a shopping flow.
+- Ambient gradient background
+- Glass surfaces with faint borders
+- Slow parallax on headers
+- Spring-based transitions
+- Haptic pulses for meaningful moments
 
 ---
 
-## 35) Developer Playbook (How to Extend)
-
+## Developer Playbook
 Add a new screen:
-1) Create view in `EMBERA/Features/<FeatureName>/`.
-2) Create ViewModel with use cases.
-3) Inject ViewModel in `AppContainer`.
-4) Route in `MainTabView` or via `NavigationStack`.
+1) Create view in EMBERA/Features/<FeatureName>/
+2) Create ViewModel with use cases
+3) Inject in AppContainer
+4) Route in MainTabView or NavigationStack
 
 Add a new data source:
-1) Define repository protocol in `Domain/Repositories`.
-2) Implement local and remote repos in `Data/Repositories`.
-3) Inject into use cases.
+1) Define repository protocol in Domain/Repositories
+2) Implement repos in Data/Repositories
+3) Inject into use cases
 
-Add a new reward offer:
-1) Update `RewardOffer.catalog` in `Domain/Models/RewardOffer.swift`.
+Add a reward offer:
+- Update RewardOffer.catalog in Domain/Models/RewardOffer.swift
 
 ---
 
-## 36) Stability Rules (Non-Negotiable)
-- Checkout must never fail because of network.
-- Passkey auth must work without password fallback.
-- UI must stay responsive at 120Hz.
-- Live Activity must end when order is delivered.
-- Widget updates must be lightweight.
+## Stability Rules
+- Checkout must never fail because of network
+- Passkey auth must work without password fallback
+- UI must stay responsive at 120Hz
+- Live Activity must end when delivered
+- Widget updates must be lightweight
+
+---
+
+## Troubleshooting
+- Passkeys not showing:
+  - Check Associated Domains plus AASA file
+  - Verify rp_id and origin in Functions config
+- Apple Pay not available:
+  - Check merchant ID and entitlements
+  - Must be on real device
+- Widgets not updating:
+  - App Group ID mismatch
+  - Widget target missing
+- Firebase errors:
+  - SDKs missing or GoogleService-Info.plist not in target
+
+---
+
+## Release Checklist
+- Firebase SDKs added and configured
+- Functions deployed plus rules plus indexes
+- AASA file live
+- Apple Pay merchant ID verified
+- Widget target configured
+- App Group ID matches code
+- Real device testing completed
+
+---
+
+## Why These Choices Matter
+EMBERA is designed to feel premium and effortless:
+local-first persistence avoids friction,
+passkeys remove password pain,
+motion leads the eye,
+and Live Activities keep the ritual alive beyond the app.
+
+---
+
+If you want a deeper dive or a visual style guide PDF, say the word.
